@@ -33,7 +33,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: always
-    command: open-webui ollama
+    command: open-webui ollama --interval 3600
 
 volumes:
   ollama:
